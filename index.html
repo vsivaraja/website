@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="jquery-1.11.2.js"></script>
+		<script src="jquery.scrollTo.js"></script>
+		<script src="jquery.color-2.1.2.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  		<script src="jquery-ui.js"></script>
+		<script src="jquery.zoomooz.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<title>
+			Vikram's Website
+		</title>
+		<nav id="stickynav" class="navbar navbar-default navbar-fixed-top">
+			<div id="back" class="container">
+      			<ul id="buttons" class="clearfix">
+      				<li id="welcomeID"><a id="welcomeButton" href="#welcomeButton">Welcome</a></li>
+      				<li id="aboutButtonID"><a id="aboutButton" href="#about">About Me</a></li>
+        			<li id="projButtonID"><a id="projButton" href="#projButton">Projects</a></li>
+        			<li id="skillsButtonID"><a id="photoButton" href="#skills">Travel Photos</a></li>
+        			<li id="contactButtonID"><a id="contactButton" href="#contact">Contact Me</a></li>
+      			</ul>
+      		</div>
+    	</nav>
+
+	</head>
+	<body bgcolor="black">
+		<section id="welcome" class="buttonColor">
+			<div id="headBack">
+				<div id="head">
+					<h1 id="headTop">
+						Vikram Sivaraja
+					</h1>
+					<h2 id="headSub">
+						Software Developer at UC Berkeley
+					</h2>
+				</div>
+				<div id="chevron" class="down">
+					<button type="button" class="btn btn-default btn-lg" id="chevronBtn">
+  						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div id="bioDescr">
+				<div id="gap2">
+ 				</div>
+					<div id="bioDiv" class="hideme">
+						<div id = "bioImg" class="bioItem">
+							<img src="Images/profpic3.JPG" id="bioPic">
+						</div>
+ 						
+						<div id="bioText" class="bioItem">
+							<p>Hello there! Welcome to my website!</p>
+ 
+							<p>My name is Vikram Sivaraja, I am a Computer Science Major at UC Berkeley, and will be going into my final year in the Fall of 2015.</p>
+ 
+							<p>Technology and software have been a favorite hobby and passion since primary school. I enjoy putting things together, solving technological puzzles and immensely enjoy working on software class projects, and independent projects that I tackle in my free time. Seeing code I have written gives me a buzz and working in a team and solving puzzles together is immeasurably enjoyable! Click the projects button above to check out my software projects!</p>
+
+							<p>My other interests include travel, volunteering at community projects, black and white drawing, rock and EDM music, and soccer. Click on the photos button above to see some of my volunteer activities and other travels. </p>
+
+							<p>I am an active member of the UC Berkeley debate club and Kappa Alpha Pi a pre-law fraternity on the UC Berkeley campus.</p>
+						</div>
+					</div>
+			</div>
+		</section>
+		<section>
+			<div id="projDescr" class="zoomViewport">
+				<div id="gap4">
+				</div>
+				<div id="projBox" class="hideme">
+					<div class="zoomContainer">
+						<div id="projDiv" class="projText">
+							<div>
+								<img id="pacmanPic" class="projPic" src="Images/tsptw.png">
+							</div>
+							<p id="projHeadText">
+							<em>Travelling Senator Problem</em>
+							</p>
+							<p id="projDescrText">
+								This was a project that I worked on as part of a team of four people. The problem was a variation of the famous traveling salesman problem. The task was to design an algorithm that, given a strongly-connected graph where each edge had a weight from 0 to 100 and each node was either colored blue or red, would return an approximation of the lowest cost path that would visit all the nodes once. However, the path could not visit more than 3 nodes of the same color in a row. My team had several approaches to this problem, and I was in charge of implementing a greedy algorithm that would pick the cheapest edge as the next edge to traverse in the path, without violating the constraint of visiting 3 nodes of the same color in a row. I implemented this algorithm in <b>Java</b>.
+							</p>
+						</div>
+						<div id="Gap">
+
+						</div>
+						<div id="projDiv" class="projText">
+							<div>
+								<img id="pacmanPic" class="projPic" src="Images/pacman3.png">
+							</div>
+							<p id="projHeadText">
+							<em>Pacman AI solver</em>
+							</p>
+							<p id="projDescrText">
+								This was a team project consisting of myself and one partner. One of my tasks was to formulate an AI that could solve variations of the classic game of Pacman in the <b>Python</b> language. We took several approaches to develop the AI. We implemented various search algorithms to get Pacman to eat all of the food on the game table as quickly as possible, such as breadth-first search, depth-first search, uniform cost search, greedy search and A* search. Of all of these, A* search was by far the most effective. In a slightly different version of the game where there are ghosts in addition to food in the maze, we used the minimax and expectimax algorithms to model the way the ghosts were behaving, and thereby gave Pacman the best chance of beating the ghosts and winning the game.							
+							</p>
+						</div>
+						<div id="Gap">
+
+						</div>
+						<div id="projDiv" class="projText">
+							<div> 
+								<img src="Images/android.png" id="censusPic" class="projPic">
+							</div>
+							<p id="projHeadText">
+								<em>Census Data App</em>
+							</p>
+							<p id="projDescrText">
+								This was an independent project I undertook over the winter break 2014. I developed the app over the course of a week. I made the app using the <b>Android SDK</b> and wrote it primarily in <b>Java</b>, though I used the <b>XML</b>to specify the UI of the app. The app retrieves census data using the API provided by USA Today. You can use the app to retrieve census information about any town in the U.S. For instance, if I wanted to get the population mass or population density of Berkeley, California, I could enter that into the app, and it would retrieve the data for me. It also sorted the data by state, so I could also easily look up the population of Berkeley, Illinois if I so chose.
+							</p>
+						</div>
+						<div id="Gap">
+
+						</div>
+						<div id="projDiv" class="projText">
+							<div>
+								<img src="Images/C.png" id="autoPic" class="projPic">
+							</div>
+							<p id="projHeadText">
+								<em>Autostereogram Generator</em>
+							</p>
+							<p id="projDescrText">
+								I wrote the code for this project in <b>C</b>. It is fed two images, one corresponding to a left hand side image, and the other corresponding to a right hand side image. I programmed the code to produce a depth map that maps the displacements between the left and the right images. This depth map can be used in the creation of 3D vision by other programs.In the second part of the project, I designed a storage space-saving feature whereby the depth map can be stored in memory more efficiently using a tree-structure. Sections of the depth map that had the same value assigned to them were stored as a single value in the leaf of a tree, thereby saving space. 
+							</p>
+						</div>
+						<div id="Gap">
+
+						</div>
+						<div id="projDiv" class="projText">
+							<div>
+								<img src="Images/java.png" id="huffmanPic" class="projPic">
+							</div>
+							<p id="projHeadText">
+								<em>Huffman Encoding</em>
+							</p>
+							<p id="projDescrText">
+								In this four-member team project, my partners and I used wrote code in Java to compress files. Think about how you compress files on your computer using WinZip or some other compression software -- this project implemented a very simple version of the same thing using the Huffman Encoding algorithm. The frequency of each character was counted and based on that, every character was encoded to a binary string. The characters that appeared more frequently were given shorter strings, and vice-versa, thereby saving space. Our code could also, given an encoded file and it's mapping, decode the file into the original, and can also compress entire directories.
+							</p>
+						</div>
+						<br style="clear: left;" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div id="pictureSec" class="zoomViewport">
+				<div id="gap4">
+				</div>
+				<div id = "photoBox" class="hideme">
+					<div class="zoomContainer">
+						<div id="photoMid">
+							<img src="Images/india1.JPG" class="zoomTarget" data-targetsize="1.0" data-duration="600" data-targetsize="0.9" data-duration="600" data-closeclick="true" id="photo">
+							<img src="Images/india2.JPG" class="zoomTarget" data-targetsize="1.0" data-duration="600" data-targetsize="0.9" data-duration="600" data-closeclick="true" id="photo">
+							<img src="Images/india3Alt.JPG" class="zoomTarget" data-targetsize="1.0" data-duration="600" data-targetsize="0.9" data-duration="600" data-closeclick="true" id="photo">
+							<img src="Images/HondurasKids1.JPG" class="zoomTarget" data-targetsize="1.0" data-duration="600" data-targetsize="0.9" data-duration="600" data-closeclick="true" id="photo">
+							<img src="Images/Honduras1Small.JPG" class="zoomTarget" data-targetsize="1.0" data-duration="600" data-targetsize="0.9" data-duration="600" data-closeclick="true" id="photo">
+							<img src="Images/HondurasKids2.JPG" class="zoomTarget" data-targetsize="1.0" data-duration="600" data-targetsize="0.9" data-duration="600" data-closeclick="true" id="photo">
+							<img src="Images/Honduras2Small.JPG" class="zoomTarget" data-targetsize="1.0" data-duration="600" data-targetsize="0.9" data-duration="600" data-closeclick="true" id="photo">
+							<img src="Images/Honduras3Small.JPG" class="zoomTarget" data-targetsize="1.0" data-duration="600" data-targetsize="0.9" data-duration="600" data-closeclick="true" id="photo">
+							<img src="Images/Honduras4Small.JPG" class="zoomTarget" data-targetsize="1.0" data-duration="600" data-targetsize="0.9" data-duration="600" data-closeclick="true" id="photo">
+							<img src="Images/Yosemite1Small.JPG" class="zoomTarget" data-targetsize="1.0" data-duration="600" data-targetsize="0.9" data-duration="600" data-closeclick="true" id="photo">
+							<img src="Images/Yosemite2Small.JPG" class="zoomTarget" data-targetsize="1.0" data-duration="600" data-targetsize="0.9" data-duration="600" data-closeclick="true" id="photo">
+							<img src="Images/HondurasBeach.JPG" class="zoomTarget" data-targetsize="1.0" data-duration="600" data-targetsize="0.9" data-duration="600" data-closeclick="true" id="photo">
+						</div>
+					</div>
+				</div>
+		</div>
+		</section>
+		<section>
+			<div id="contactSection">
+				<div id="gap3">
+					
+				</div>
+				<div id="contactBord" class="hideme">
+					<div id="contactSection1" class="contact">
+						<p>Contact me at: <email style="text-decoration:none">sivarajavikram@gmail.com</email></p>
+						<p>Click <a href="VikramSivaraja_resumeWeb.pdf" download="vikramResume">here</a> to download my resume!
+					</div>
+					<div id="contactSection2" class="contact">
+						Thank you!
+					</div>
+				</div>
+				<div id="linkedIn" class="hideme">
+						<a href="https://www.linkedin.com/in/vikramsivaraja"><img id="linkedInPic" src="Images/linkedin.png"></a>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
