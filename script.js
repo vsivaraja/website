@@ -12,7 +12,6 @@ $(document).ready( function() {
 		$("#contactSection").css("height", $(window).height()*1.1+"px");
 	}
 
-
 	function bounce() {
 		window.setInterval(function() {
 			$("#chevron").effect( "bounce", { times: 1 }, "slow" );
@@ -146,16 +145,3 @@ $(document).ready( function() {
 	});
 
 });
-TO DO -- DYNAMIC SCREEN RESIZING?
-// $(document).resize(windowResize);
-
-// function windowResize() {
-// 	if ($(window).height() > 900) {
-// 		concole.log("hi");
-// 		$("#welcome").css("height", $(window).height()*1.1+"px");
-// 		$("#bioDescr").css("height", $(window).height()*1.1+"px");
-// 		$("#projDescr").css("height", $(window).height()*1.1+"px");
-// 		$("#pictureSec").css("height", $(window).height()*1.1+"px");
-// 		$("#contactSection").css("height", $(window).height()*1.1+"px");
-// 	}
-// }

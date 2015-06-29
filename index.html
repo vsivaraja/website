@@ -5,6 +5,15 @@
 		<script src="jquery.scrollTo.js"></script>
 		<script src="jquery.color-2.1.2.js"></script>
 		<script type="text/javascript" src="script.js"></script>
+		<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  			ga('create', 'UA-64255875-1', 'auto');
+  			ga('send', 'pageview');
+		</script>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   		<script src="jquery-ui.js"></script>
@@ -16,11 +25,12 @@
 		<nav id="stickynav" class="navbar navbar-default navbar-fixed-top">
 			<div id="back" class="container">
       			<ul id="buttons" class="clearfix">
-      				<li id="welcomeID"><a id="welcomeButton" href="#welcomeButton">Welcome</a></li>
-      				<li id="aboutButtonID"><a id="aboutButton" href="#about">About Me</a></li>
-        			<li id="projButtonID"><a id="projButton" href="#projButton">Projects</a></li>
-        			<li id="skillsButtonID"><a id="photoButton" href="#skills">Travel Photos</a></li>
-        			<li id="contactButtonID"><a id="contactButton" href="#contact">Contact Me</a></li>
+      				<li id="welcomeID"><a id="welcomeButton" class="btn" href="#welcomeButton">Welcome</a></li>
+      				<li id="aboutButtonID"><a id="aboutButton" class="btn" href="#about">About Me</a></li>
+        			<li id="projButtonID"><a id="projButton" class="btn" href="#projButton">Projects</a></li>
+        			<li id="skillsButtonID"><a id="photoButton" class="btn" href="#skills">Travel Photos</a></li>
+        			<li id="contactButtonID"><a id="contactButton" class="btn" href="#contact">Contact Me</a></li>
+        			<li id="resumeButtonId"><a id="resumeButton" class="btn" href="VikramSivaraja_resumeWeb.pdf" target="vikramResume">Resume</a></li>
       			</ul>
       		</div>
     	</nav>
@@ -30,11 +40,13 @@
 		<section id="welcome" class="buttonColor">
 			<div id="headBack">
 				<div id="head">
-					<h1 id="headTop">
-						Vikram Sivaraja
+					<h1>
+						<p id="headTop">Vikram Sivaraja</p>
 					</h1>
-					<h2 id="headSub">
-						Software Developer at UC Berkeley
+					<h2>
+						<p id="headSub">Computer Science Student</p>
+						<p id="at"><em>at</em></p>
+						<p id="headSub">UC Berkeley</p>
 					</h2>
 				</div>
 				<div id="chevron" class="down">
@@ -47,6 +59,9 @@
 		<section>
 			<div id="bioDescr">
 				<div id="gap2">
+ 				</div>
+ 				<div id="title">
+ 					About Me
  				</div>
 					<div id="bioDiv" class="hideme">
 						<div id = "bioImg" class="bioItem">
@@ -62,7 +77,7 @@
 
 							<p>My other interests include travel, volunteering at community projects, black and white drawing, rock and EDM music, and soccer. Click on the photos button above to see some of my volunteer activities and other travels. </p>
 
-							<p>I am an active member of the UC Berkeley debate club and Kappa Alpha Pi a pre-law fraternity on the UC Berkeley campus.</p>
+							<p>I am an active member of the UC Berkeley debate club and Kappa Alpha Pi, a pre-law fraternity on the UC Berkeley campus.</p>
 						</div>
 					</div>
 			</div>
@@ -71,6 +86,9 @@
 			<div id="projDescr" class="zoomViewport">
 				<div id="gap4">
 				</div>
+				<div id="title">
+ 					Projects
+ 				</div>
 				<div id="projBox" class="hideme">
 					<div class="zoomContainer">
 						<div id="projDiv" class="projText">
@@ -95,7 +113,7 @@
 							<em>Pacman AI solver</em>
 							</p>
 							<p id="projDescrText">
-								This was a team project consisting of myself and one partner. One of my tasks was to formulate an AI that could solve variations of the classic game of Pacman in the <b>Python</b> language. We took several approaches to develop the AI. We implemented various search algorithms to get Pacman to eat all of the food on the game table as quickly as possible, such as breadth-first search, depth-first search, uniform cost search, greedy search and A* search. Of all of these, A* search was by far the most effective. In a slightly different version of the game where there are ghosts in addition to food in the maze, we used the minimax and expectimax algorithms to model the way the ghosts were behaving, and thereby gave Pacman the best chance of beating the ghosts and winning the game.							
+								In this two-member team project, my partner and I took several approaches to develop an AI for the classic Pacman game. We implemented various search algorithms to get Pacman to eat all of the food on the game table as quickly as possible, such as breadth-first search, depth-first search, uniform cost search, greedy search and A* search. Of all of these, A* search was by far the most effective. In a slightly different version of the game where there are ghosts in addition to food in the maze, we used the minimax and expectimax algorithms to model the way the ghosts were behaving, and thereby gave Pacman the best chance of beating the ghosts and winning the game.
 							</p>
 						</div>
 						<div id="Gap">
@@ -109,7 +127,7 @@
 								<em>Census Data App</em>
 							</p>
 							<p id="projDescrText">
-								This was an independent project I undertook over the winter break 2014. I developed the app over the course of a week. I made the app using the <b>Android SDK</b> and wrote it primarily in <b>Java</b>, though I used the <b>XML</b>to specify the UI of the app. The app retrieves census data using the API provided by USA Today. You can use the app to retrieve census information about any town in the U.S. For instance, if I wanted to get the population mass or population density of Berkeley, California, I could enter that into the app, and it would retrieve the data for me. It also sorted the data by state, so I could also easily look up the population of Berkeley, Illinois if I so chose.
+								This was an independent project I recently undertook. I developed the app over the course of a week. I made the app using the <b>Xcode</b> and wrote it primarily in <b>Objective-C</b>, though I used the <b>Storyboard</b> feature to specify the UI of the app. The app retrieves census data using the API provided by USA Today. You can use the app to retrieve census information about any town in the U.S. For instance, if I wanted to get the population mass or population density of Berkeley, California, I could enter that into the app, and it would retrieve the data for me. It also sorted the data by state, so I could also easily look up the population of Berkeley, Illinois if I so chose. I am also working on a version for Android using the Android SDK. 
 							</p>
 						</div>
 						<div id="Gap">
@@ -147,8 +165,11 @@
 		</section>
 		<section>
 			<div id="pictureSec" class="zoomViewport">
-				<div id="gap4">
+				<div id="gap5">
 				</div>
+				<div id="title">
+ 					Travel Photos
+ 				</div>
 				<div id = "photoBox" class="hideme">
 					<div class="zoomContainer">
 						<div id="photoMid">
@@ -177,7 +198,6 @@
 				<div id="contactBord" class="hideme">
 					<div id="contactSection1" class="contact">
 						<p>Contact me at: <email style="text-decoration:none">sivarajavikram@gmail.com</email></p>
-						<p>Click <a href="VikramSivaraja_resumeWeb.pdf" download="vikramResume">here</a> to download my resume!
 					</div>
 					<div id="contactSection2" class="contact">
 						Thank you!
@@ -185,6 +205,9 @@
 				</div>
 				<div id="linkedIn" class="hideme">
 						<a href="https://www.linkedin.com/in/vikramsivaraja"><img id="linkedInPic" src="Images/linkedin.png"></a>
+				</div>
+				<div id="github" class="hideme">
+						<a href="https://github.com/vsivaraja"><img id="githubPic" src="Images/github2.gif"></a>
 				</div>
 			</div>
 		</section>
