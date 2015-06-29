@@ -16,7 +16,17 @@ $(document).ready( function() {
 		window.setInterval(function() {
 			$("#chevron").effect( "bounce", { times: 1 }, "slow" );
 		}, 600);
-	}	
+	}
+
+	$(".travelPhoto").mouseenter(function() {
+		$(this).stop(true, true);
+		$(this).fadeTo( "fast", 1 );
+	});	
+
+	$(".travelPhoto").mouseleave(function() {
+		$(this).stop(true, true);
+		$(this).fadeTo("fast", 0.6);
+	});
 
 	sectionColor();
 
